@@ -1,0 +1,35 @@
+<html>
+
+<head>
+<meta charset="utf-8" />
+<title>Mountain Lion Conflict Areas</title>
+
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
+
+<style>
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; };
+</style>
+
+</head>
+
+<body>
+<div id="map"></div>
+
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiamFiYm90dDAzMjUiLCJhIjoiY203dzc1dTc2MDJqaTJrb2pwemNsbzFsYyJ9.k22Xq8vA8S4INw69grr-bA';  //Put your mapbox access token here
+
+        // Load a new map in the 'map' HTML div
+        var map = new mapboxgl.Map({
+            container: 'map', // container id
+            style: 'mapbox://styles/jabbott0325/cm9u6s9ws00qs01socj2fhi7c/draft', // Put your mapbox style ID here
+            center: [-105.7821, 39.5501], // starting position [lng, lat]
+            zoom: 7 // starting zoom
+        });
+
+</script>
+
+</body>
+</html>
